@@ -9,9 +9,9 @@ let sumLargestNumbers = function(numbers) {
       largest = numbers[i];
 
     }
-    // var index = numbers.indexOf(numbers[i]);
-    // numbers.splice(index, i);
   }
+  var index = numbers.indexOf(largest);
+  numbers.splice(index, largest);
   sum += largest;
 
 
